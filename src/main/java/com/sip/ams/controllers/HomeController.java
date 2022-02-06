@@ -12,6 +12,7 @@ public class HomeController {
 
     @RequestMapping("/affichage")
     public String affichage(){
+        System.out.println("sssss");
         return "home/affichage";
     }
 }
