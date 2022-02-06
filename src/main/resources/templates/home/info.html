@@ -6,5 +6,12 @@
 </head>
 <body>
 <h1 align="center"> Ma premiére Vue Spring  </h1>
+<h3 th:text="${workshop}"></h3>
+<h1>th:each</h1>
+<ul>
+    <th:block th:each="list : ${list}">
+        <li th:text="${list}">..</li>
+    </th:block>
+</ul>
 </body>
 </html>
