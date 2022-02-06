@@ -12,9 +12,9 @@ public class HomeController {
     @RequestMapping("/info")
     public String info(Model model ){
         String formation="fullstack";
-        ArrayList lists = new ArrayList<>(Arrays.asList("CPA", "CPO", "Spring","Angular"));
+        ArrayList<String> lists = new ArrayList<>(Arrays.asList("CPA", "CPO", "Spring","Angular"));
         model.addAttribute("workshop",formation);
-        model.addAttribute("list",lists);
+        model.addAttribute("lists",lists);
         return "home/info";
     }
 
